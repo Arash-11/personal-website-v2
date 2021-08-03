@@ -1,0 +1,48 @@
+.container {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introTitle {
+  color: var(--lightgray);
+  font-family: "Young Serif";
+  font-size: 2rem;
+  letter-spacing: 1.3px;
+}
+
+.introText {
+  max-width: 75%;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+.container.lightMode .introText {
+  color: var(--black);
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .introTitle {
+    font-size: 1.4rem;
+  }
+  .introText {
+    margin-top: 1.2rem;
+    min-width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+}
+/*# sourceMappingURL=Intro.module.css.map */

@@ -1,0 +1,142 @@
+@import '../../styles/config';
+
+.recentBlogsContainer {
+  @include sectionMarginAndBorder;
+}
+
+
+.title {
+  @include titleStyles;
+  margin-bottom: $padding / 2;
+  font-size: 2.5rem;
+}
+
+
+.blogsContainer {
+  @include sectionMarginAndBorder;
+  padding-top: 0;
+  margin-top: $padding/1.5;
+  border-top: none;
+  .title {
+    font-size: 3rem;
+  }
+}
+
+
+.postsWrapper {
+  @include sectionGrid;
+}
+
+
+.card {
+  padding: 1.5rem 1rem;
+  border: solid 3px var(--slategray);
+  border-radius: 7px;
+  transition: border 0.5s;
+  time {
+    opacity: 0.8;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  h3 {
+    margin: 1.5rem 0;
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+  }
+  p {
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  &:hover {
+    border: solid 3px var(--lightgray);
+  }
+}
+
+
+.seeAllBlogs {
+  color: var(--white);
+  font-family: 'Young Serif';
+  font-size: 2.2rem;
+  text-decoration: underline;
+  & + .arrow {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    vertical-align: sub;
+    transition: all 0.5s;
+  }
+  &:hover {
+    @include arrowStyleHover($margin-left: 2rem);
+  }
+}
+
+
+.recentBlogsContainer.lightMode {
+  border-top: solid 2px var(--white);
+}
+
+.recentBlogsContainer.lightMode,
+.blogsContainer.lightMode {
+  .postsWrapper {
+    color: var(--black);
+  }
+  .card {
+    border: solid 3px var(--whiteshade);
+  }
+  .card:hover {
+    border: solid 3px var(--black);
+  }
+  .seeAllBlogs,
+  .seeAllBlogs + .arrow {
+    color: var(--darkgray);
+  }
+}
+
+
+@media screen and (max-width: $screenSizeS) {
+  .recentBlogsContainer {
+    @include sectionMarginAndBorderSmall;
+  }
+
+  .title {
+    margin-bottom: $paddingS;
+    font-size: 1.7rem;
+  }
+
+  .blogsContainer {
+    @include sectionMarginAndBorderSmall;
+    .title {
+      font-size: 2.2rem;
+    }
+  }
+
+  .postsWrapper {
+    @include sectionFlexSmall;
+  }
+
+  .card {
+    time {
+      font-size: 0.9rem;
+    }
+    h3 {
+      margin: 0.8rem 0 1.1rem;
+      font-size: 1.7rem;
+      line-height: 2.3rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  .seeAllBlogs {
+    font-size: 1.7rem;
+    & + .arrow {
+      font-size: 2.7rem;
+    }
+  }
+}

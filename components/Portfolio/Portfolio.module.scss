@@ -1,0 +1,136 @@
+@import '../../styles/config';
+
+
+.container {
+  @include sectionMarginAndBorder;
+}
+
+
+.portfolioTitle {
+  @include titleStyles;
+  margin-bottom: $padding / 2;
+  font-size: 2.5rem;
+}
+
+
+.portfolioCards {
+  @include sectionGrid($repeatCount: 2, $gap: 6rem);
+}
+
+
+.card {
+  h3 {
+    margin: 2rem 0 1rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  a {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 0.5s, color 0.5s;
+    &:hover {
+      opacity: 1;
+      color: white;
+    }
+  }
+  .dash {
+    position: relative;
+    top: 2px;
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 100;
+    margin: 0 0.7rem;
+    vertical-align: bottom;
+    transition: all 0.5s;
+  }
+  p {
+    margin-top: 2.3rem;
+    opacity: 0.8;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+  }
+}
+
+
+.card a:hover {
+  @include arrowStyleHover;
+}
+
+
+.seeMore {
+  color: var(--white);
+  font-family: 'Young Serif';
+  font-size: 2.2rem;
+  text-decoration: underline;
+  & + .arrow {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    vertical-align: sub;
+    transition: all 0.5s;
+  }
+  &:hover {
+    @include arrowStyleHover($margin-left: 2rem);
+  }
+}
+
+
+.container.lightMode {
+  border-top: solid 2px var(--white);
+  .portfolioCards,
+  .card a:hover {
+    color: black;
+  }
+  .card div a {
+    color: var(--slategray);
+  }
+  .seeMore,
+  .seeMore + .arrow {
+    color: var(--darkgray);
+  }
+}
+
+
+@media screen and (max-width: $screenSizeS) {
+  .container {
+    @include sectionMarginAndBorderSmall;
+  }
+
+  .portfolioTitle {
+    margin-bottom: $paddingS;
+    font-size: 1.7rem;
+  }
+
+  .portfolioCards {
+    @include sectionFlexSmall;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    h3 {
+      font-size: 1.7rem;
+      line-height: 2rem;
+    }
+    a {
+      font-size: 1.2rem;
+    }    
+    p {
+      margin: 1.5rem 0 1.2rem;
+      height: auto;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .seeMore {
+    font-size: 1.7rem;
+    & + .arrow {
+      font-size: 2.7rem;
+    }
+  }
+}

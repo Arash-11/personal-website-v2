@@ -1,0 +1,137 @@
+@import '../../styles/config';
+
+.nav {
+  padding: 0.7rem $padding;
+  background-color: var(--black);
+  border-bottom: solid 1px var(--darkgray);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transition: top 0.7s ease-out;
+}
+
+
+.hideNav {
+  top: -50%;
+}
+
+
+.nav ul {
+  padding: $padding/6 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--darkwhite);
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+
+  li a {
+    padding: 0.8rem 1.5rem;
+    transition: $transition;
+  }
+
+  li:last-child a {
+    margin: 0 0 0 3rem;
+    border: solid 2px var(--darkwhite);
+    border-radius: 3px;
+    &:hover {
+      border: solid 2px white;
+    }
+  }
+
+  .logo {
+    margin-right: auto;
+    font-size: 2.3rem;
+    font-family: 'Domine', serif;
+    color: var(--white);
+    a {
+      padding: 0;
+    }
+  }
+
+  li a:hover {
+    color: white;
+  }
+}
+
+
+.colorToggleBtn {
+  padding: 0.5rem 0.5rem 0.1rem;
+  margin: 0 2rem 0 0;
+  background-color: var(--black);
+  border: none;
+  color: var(--darkwhite);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.5s;
+  &:hover {
+    color: white;
+  }
+}
+
+
+.nav.lightMode {
+  background-color: white;
+  border-bottom: solid 1px var(--white);
+  ul {
+    color: var(--gray);
+  }
+  .logo {
+    color: var(--black);
+  }
+  .colorToggleBtn {
+    background-color: white;
+    color: var(--gray);
+    &:hover {
+      color: black;
+    }
+  }
+  li:last-child a {
+    border: solid 2px var(--gray);
+    &:hover {
+      border: solid 2px black;
+    }
+  }
+  li a:hover {
+    color: black;
+  }
+}
+
+
+@media screen and (max-width: $screenSizeS) {
+  .nav {
+    padding: 0.7rem $paddingS;
+    border-bottom: solid 2px ;
+  }
+
+  .logo a {
+    vertical-align: top;
+    font-size: 1.8rem;
+  }
+
+  .nav ul {
+    padding: $paddingS/4 0;
+    li:nth-child(2) {
+      margin-left: 1rem;
+    }
+    li a {
+      padding: 0.6rem 1rem;
+    }
+    li {
+      font-size: 0.9rem;
+    }
+    li:last-child a {
+      margin-left: 1rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+
+  .colorToggleBtn {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}

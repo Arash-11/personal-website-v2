@@ -1,0 +1,167 @@
+.container {
+  margin-top: 7rem;
+  padding-top: 7rem;
+  width: 100%;
+  border-top: solid 2px var(--darkgray);
+}
+
+.portfolioTitle {
+  color: var(--lightgray);
+  font-family: "Young Serif";
+  font-size: 2rem;
+  letter-spacing: 1.3px;
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+}
+
+.portfolioCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1rem;
+}
+
+.card h3 {
+  margin: 2rem 0 1rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.card a {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.5s, color 0.5s;
+  transition: opacity 0.5s, color 0.5s;
+}
+
+.card a:hover {
+  opacity: 1;
+  color: white;
+}
+
+.card .dash {
+  position: relative;
+  top: 2px;
+  font-size: 3rem;
+  font-family: 'Poppins';
+  font-weight: 100;
+  margin: 0 0.7rem;
+  vertical-align: bottom;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card p {
+  margin-top: 2.3rem;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.card a:hover {
+  opacity: 0.8;
+}
+
+.card a:hover + .arrow {
+  opacity: 0.8;
+  margin-left: 1.2rem;
+}
+
+.seeMore {
+  color: var(--white);
+  font-family: 'Young Serif';
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+
+.seeMore + .arrow {
+  color: var(--white);
+  font-size: 3.5rem;
+  margin-left: 1rem;
+  vertical-align: sub;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.seeMore:hover {
+  opacity: 0.8;
+}
+
+.seeMore:hover + .arrow {
+  opacity: 0.8;
+  margin-left: 2rem;
+}
+
+.container.lightMode {
+  border-top: solid 2px var(--white);
+}
+
+.container.lightMode .portfolioCards,
+.container.lightMode .card a:hover {
+  color: black;
+}
+
+.container.lightMode .card div a {
+  color: var(--slategray);
+}
+
+.container.lightMode .seeMore,
+.container.lightMode .seeMore + .arrow {
+  color: var(--darkgray);
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    margin-top: 3.5rem;
+    padding-top: 2.33333rem;
+  }
+  .portfolioTitle {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+  }
+  .portfolioCards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+  .card h3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .card a {
+    font-size: 1.2rem;
+  }
+  .card p {
+    margin: 1.5rem 0 1.2rem;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .seeMore {
+    font-size: 1.7rem;
+  }
+  .seeMore + .arrow {
+    font-size: 2.7rem;
+  }
+}
+/*# sourceMappingURL=Portfolio.module.css.map */

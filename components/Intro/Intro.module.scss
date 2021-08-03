@@ -1,0 +1,46 @@
+@import '../../styles/config';
+
+.container {
+  margin-top: $firstSectionMarginTop;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.introTitle {
+  @include titleStyles;
+}
+
+
+.introText {
+  max-width: $sectionMaxWidth;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+.container.lightMode {
+  .introText {
+    color: var(--black);
+  }
+}
+
+
+@media screen and (max-width: $screenSizeS) {
+  .container {
+    flex-direction: column;
+  }
+
+  .introTitle {
+    font-size: 1.4rem;
+  }
+
+  .introText {
+    margin-top: 1.2rem;
+    min-width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+}

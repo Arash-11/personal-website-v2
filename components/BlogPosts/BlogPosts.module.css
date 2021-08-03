@@ -1,0 +1,176 @@
+.recentBlogsContainer {
+  margin-top: 7rem;
+  padding-top: 7rem;
+  width: 100%;
+  border-top: solid 2px var(--darkgray);
+}
+
+.title {
+  color: var(--lightgray);
+  font-family: "Young Serif";
+  font-size: 2rem;
+  letter-spacing: 1.3px;
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+}
+
+.blogsContainer {
+  margin-top: 7rem;
+  padding-top: 7rem;
+  width: 100%;
+  border-top: solid 2px var(--darkgray);
+  padding-top: 0;
+  margin-top: 4.66667rem;
+  border-top: none;
+}
+
+.blogsContainer .title {
+  font-size: 3rem;
+}
+
+.postsWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1rem;
+}
+
+.card {
+  padding: 1.5rem 1rem;
+  border: solid 3px var(--slategray);
+  border-radius: 7px;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+.card time {
+  opacity: 0.8;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.card h3 {
+  margin: 1.5rem 0;
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+.card p {
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.card:hover {
+  border: solid 3px var(--lightgray);
+}
+
+.seeAllBlogs {
+  color: var(--white);
+  font-family: 'Young Serif';
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+
+.seeAllBlogs + .arrow {
+  color: var(--white);
+  font-size: 3.5rem;
+  margin-left: 1rem;
+  vertical-align: sub;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.seeAllBlogs:hover {
+  opacity: 0.8;
+}
+
+.seeAllBlogs:hover + .arrow {
+  opacity: 0.8;
+  margin-left: 2rem;
+}
+
+.recentBlogsContainer.lightMode {
+  border-top: solid 2px var(--white);
+}
+
+.recentBlogsContainer.lightMode .postsWrapper,
+.blogsContainer.lightMode .postsWrapper {
+  color: var(--black);
+}
+
+.recentBlogsContainer.lightMode .card,
+.blogsContainer.lightMode .card {
+  border: solid 3px var(--whiteshade);
+}
+
+.recentBlogsContainer.lightMode .card:hover,
+.blogsContainer.lightMode .card:hover {
+  border: solid 3px var(--black);
+}
+
+.recentBlogsContainer.lightMode .seeAllBlogs,
+.recentBlogsContainer.lightMode .seeAllBlogs + .arrow,
+.blogsContainer.lightMode .seeAllBlogs,
+.blogsContainer.lightMode .seeAllBlogs + .arrow {
+  color: var(--darkgray);
+}
+
+@media screen and (max-width: 750px) {
+  .recentBlogsContainer {
+    margin-top: 3.5rem;
+    padding-top: 2.33333rem;
+  }
+  .title {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+  }
+  .blogsContainer {
+    margin-top: 3.5rem;
+    padding-top: 2.33333rem;
+  }
+  .blogsContainer .title {
+    font-size: 2.2rem;
+  }
+  .postsWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+  .card time {
+    font-size: 0.9rem;
+  }
+  .card h3 {
+    margin: 0.8rem 0 1.1rem;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+  .card p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .seeAllBlogs {
+    font-size: 1.7rem;
+  }
+  .seeAllBlogs + .arrow {
+    font-size: 2.7rem;
+  }
+}
+/*# sourceMappingURL=BlogPosts.module.css.map */

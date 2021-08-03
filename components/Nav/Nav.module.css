@@ -1,0 +1,149 @@
+.nav {
+  padding: 0.7rem 7rem;
+  background-color: var(--black);
+  border-bottom: solid 1px var(--darkgray);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transition: top 0.7s ease-out;
+  transition: top 0.7s ease-out;
+}
+
+.hideNav {
+  top: -50%;
+}
+
+.nav ul {
+  padding: 1.16667rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--darkwhite);
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.nav ul li a {
+  padding: 0.8rem 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.nav ul li:last-child a {
+  margin: 0 0 0 3rem;
+  border: solid 2px var(--darkwhite);
+  border-radius: 3px;
+}
+
+.nav ul li:last-child a:hover {
+  border: solid 2px white;
+}
+
+.nav ul .logo {
+  margin-right: auto;
+  font-size: 2.3rem;
+  font-family: 'Domine', serif;
+  color: var(--white);
+}
+
+.nav ul .logo a {
+  padding: 0;
+}
+
+.nav ul li a:hover {
+  color: white;
+}
+
+.colorToggleBtn {
+  padding: 0.5rem 0.5rem 0.1rem;
+  margin: 0 2rem 0 0;
+  background-color: var(--black);
+  border: none;
+  color: var(--darkwhite);
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.colorToggleBtn:hover {
+  color: white;
+}
+
+.nav.lightMode {
+  background-color: white;
+  border-bottom: solid 1px var(--white);
+}
+
+.nav.lightMode ul {
+  color: var(--gray);
+}
+
+.nav.lightMode .logo {
+  color: var(--black);
+}
+
+.nav.lightMode .colorToggleBtn {
+  background-color: white;
+  color: var(--gray);
+}
+
+.nav.lightMode .colorToggleBtn:hover {
+  color: black;
+}
+
+.nav.lightMode li:last-child a {
+  border: solid 2px var(--gray);
+}
+
+.nav.lightMode li:last-child a:hover {
+  border: solid 2px black;
+}
+
+.nav.lightMode li a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    padding: 0.7rem 2rem;
+    border-bottom: solid 2px;
+  }
+  .logo a {
+    vertical-align: top;
+    font-size: 1.8rem;
+  }
+  .nav ul {
+    padding: 0.5rem 0;
+  }
+  .nav ul li:nth-child(2) {
+    margin-left: 1rem;
+  }
+  .nav ul li a {
+    padding: 0.6rem 1rem;
+  }
+  .nav ul li {
+    font-size: 0.9rem;
+  }
+  .nav ul li:last-child a {
+    margin-left: 1rem;
+    padding: 0.6rem 1rem;
+  }
+  .colorToggleBtn {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */
