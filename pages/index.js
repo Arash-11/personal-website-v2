@@ -18,8 +18,11 @@ const Home = ({ allPostsData }) => {
   return (
     <>
       <Head>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta
+          name="keywords"
+          content="blog,web development,software,web dev,tech,writing,shopify,ecommerce,nextjs"
+        />
+        <meta name="description" content="Hi, I am a web developer working in the Shopify eco-system." />
         <title>arash &mdash; web developer</title>
       </Head>
       <Intro />

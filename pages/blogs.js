@@ -15,8 +15,11 @@ const BlogsPage = ({ allPostsData }) => {
   return (
     <>
       <Head>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta
+          name="keywords"
+          content="blog,blogs,blogging,web development,software,web dev,tech,writing"
+        />
+        <meta name="description" content="Collection of all of my blog posts." />
         <title>Blogs</title>
       </Head>
       <Blogs posts={allPostsData} />

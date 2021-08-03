@@ -47,14 +47,14 @@ const Footer = () => {
           </a>
         </Link>
         <div className={icons}>
-          <Link href="https://twitter.com/arash11gt" target="_blank">
-            <a><AiOutlineTwitter /></a>
+          <Link href="https://twitter.com/arash11gt">
+            <a target="_blank" rel="noopener" aria-label="Twitter link"><AiOutlineTwitter /></a>
           </Link>
-          <Link href="https://github.com/Arash-11" target="_blank">
-            <a><AiFillGithub /></a>
+          <Link href="https://github.com/Arash-11">
+            <a target="_blank" rel="noopener" aria-label="GitHub link"><AiFillGithub /></a>
           </Link>
-          <Link href="https://linkedin.com/in/arash-nawyan/" target="_blank">
-            <a><AiFillLinkedin /></a>
+          <Link href="https://linkedin.com/in/arash-nawyan/">
+            <a target="_blank" rel="noopener" aria-label="Linkedin link"><AiFillLinkedin /></a>
           </Link>
         </div>
         <p className={copyright}>© Arash Nawyan 2021</p>

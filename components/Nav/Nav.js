@@ -37,7 +37,7 @@ const Nav = ({ toggleThemeMode }) => {
             <Link href="/">a.</Link>
           </li>
           <li>
-            <button className={colorToggleBtn} onClick={handleClick}>
+            <button className={colorToggleBtn} aria-label="light/dark mode toggle" onClick={handleClick}>
               {isLightMode ? <RiMoonFill /> : <RiSunLine />}
             </button>
           </li>
