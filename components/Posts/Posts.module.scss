@@ -1,8 +1,8 @@
 @import '../../styles/config';
 
 .article {
-  margin-top: $firstSectionMarginTop;
-  max-width: $sectionMaxWidth;
+  margin: $firstSectionMarginTop auto auto;
+  max-width: $articleMaxWidth;
   font-family: 'Poppins';
   color: var(--white);
 
@@ -12,21 +12,66 @@
   }
 
   time {
-    margin: 1rem 0 2rem;
+    margin: 2rem 0 4rem;
     display: inline-block;
     opacity: 0.8;
     font-size: 1.3rem;
     font-weight: 400;
   }
+
+  code {
+    padding: 0.2rem 0.6rem;
+    background-color: var(--darkblue);
+  }
+
+  pre {
+    padding: 1.2rem 2rem;
+    border-radius: 2px;
+    background-color: var(--darkblue);
+    line-height: 1.8rem;
+    code {
+      padding: 0;
+      background-color: unset;
+    }
+  }
+
+  blockquote {
+    margin-top: 0.5rem;
+    padding: 0.2rem 0 0.2rem 1rem;
+    border-left: solid 5px var(--lightgray);
+  }
+
+  ol {
+    li {
+      list-style-position: inside;
+    }
+    li:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+    span {
+      margin-left: 0.5rem;
+    }
+  }
 }
+
 
 .content {
   font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 
 .article.lightMode {
   color: var(--black);
+
+  code, pre {
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  blockquote {
+    border-left: solid 5px var(--slategray);
+  }
 }
 
 

@@ -57,7 +57,7 @@ const Footer = () => {
             <a target="_blank" rel="noopener" aria-label="Linkedin link"><AiFillLinkedin /></a>
           </Link>
         </div>
-        <p className={copyright}>© Arash Nawyan 2021</p>
+        <p className={copyright}>© Arash Nawyan {new Date().getFullYear()}</p>
       </footer>
     </>
   )

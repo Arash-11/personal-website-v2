@@ -9,6 +9,7 @@
   --selection-color: #ffb800;
   --black: rgb(4, 4, 24);
   --lightblack: #979797;
+  --darkblue: #273746;
   --bg-blurred: rgba(0,0,0,0.5);
   --bg-blurred-light: rgba(250,250,250,0.5);
   --white: rgb(230, 230, 230);
@@ -49,6 +50,6 @@ a {
   text-decoration: none;
 }
 
-li {
+ul li {
   list-style: none;
 }

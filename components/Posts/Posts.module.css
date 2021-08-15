@@ -1,6 +1,6 @@
 .article {
-  margin-top: 5rem;
-  max-width: 75%;
+  margin: 5rem auto auto;
+  max-width: 80ch;
   font-family: 'Poppins';
   color: var(--white);
 }
@@ -11,19 +11,64 @@
 }
 
 .article time {
-  margin: 1rem 0 2rem;
+  margin: 2rem 0 4rem;
   display: inline-block;
   opacity: 0.8;
   font-size: 1.3rem;
   font-weight: 400;
 }
 
+.article code {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--darkblue);
+}
+
+.article pre {
+  padding: 1.2rem 2rem;
+  border-radius: 2px;
+  background-color: var(--darkblue);
+  line-height: 1.8rem;
+}
+
+.article pre code {
+  padding: 0;
+  background-color: unset;
+}
+
+.article blockquote {
+  margin-top: 0.5rem;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: solid 5px var(--lightgray);
+}
+
+.article ol li {
+  list-style-position: inside;
+}
+
+.article ol li:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.article ol span {
+  margin-left: 0.5rem;
+}
+
 .content {
   font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .article.lightMode {
   color: var(--black);
+}
+
+.article.lightMode code, .article.lightMode pre {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.article.lightMode blockquote {
+  border-left: solid 5px var(--slategray);
 }
 
 @media screen and (max-width: 750px) {
