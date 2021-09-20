@@ -4,7 +4,7 @@ description: "Let's rethink our mental model to understand code better."
 date: "2021-08-15"
 ---
 
-A topic that I've noticed that isn't being emphasized enough in web development (at least in my experience) is mental models. Having the correct mental model can help you better understand what's happening under the hood, which can help you learn more complex concepts and prevent some tricky bugs. And the sooner you learn to think with a better mental model, the easier it'll make things in the long run.
+A topic that I've noticed that isn't being emphasized enough in web development courses (at least in my experience) is mental models. Having the correct mental model can help you better understand what's happening under the hood, which can help you learn more complex concepts and prevent some tricky bugs. And the sooner you learn to think with a better mental model, the easier it'll make things in the long run.
 
 <br />
 
