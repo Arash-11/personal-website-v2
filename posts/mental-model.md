@@ -87,4 +87,4 @@ We didn't dive too deep in this article but I hope reading this helps you take a
 
 <br />
 
-I hope you enjoyed reading this and I'd love to hear if you have any comments! Don't hesitate to send me an email at arashnawy@gmail.com or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!
+I hope you enjoyed reading this and I'd love to hear if you have any comments! Don't hesitate to send me an email at <u>arashnawy@gmail.com</u> or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!

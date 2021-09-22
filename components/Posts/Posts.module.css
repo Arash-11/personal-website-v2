@@ -10,6 +10,11 @@
   font-size: 3.2rem;
 }
 
+.article a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .article time {
   margin: 2rem 0 4rem;
   display: inline-block;
