@@ -12,12 +12,12 @@ import {
   seeMore,
   arrow } from './Portfolio.module.css';
 
-const RecentBlogs = () => {
+const RecentProjects = () => {
   const isLightMode = useContext(ThemeContext);
 
   return (
     <section id="portfolio" className={`${container} ${isLightMode ? lightMode : ''}`}>
-      <h2 className={portfolioTitle}>Recent portfolio</h2>
+      <h2 className={portfolioTitle}>Recent projects</h2>
       <div className={portfolioCards}>
         <div className={card}>
           <Image
@@ -68,4 +68,4 @@ const RecentBlogs = () => {
   )
 };
 
-export default RecentBlogs;
+export default RecentProjects;
