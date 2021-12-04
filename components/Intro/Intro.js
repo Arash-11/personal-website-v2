@@ -13,10 +13,10 @@ const Intro = () => {
           Hi, I'm Arash Nawyan!
           <br />
           <br />
-          Previously working with cars, I am now a self-taught web developer working in the Shopify eco-system during the day and tinkering with new development technologies at night.
+          Previously working with cars, I am now a self-taught web developer working in the Shopify eco-system.
           <br />
           <br />
-          When I'm not in front of my computer, you can find me reading, playing football (aka soccer), or watching anime.
+          When I'm not coding, you can find me writing a blog, reading, watching anime, or watching videos breaking down rap lyrics.
         </p>
       </main>
     </>
