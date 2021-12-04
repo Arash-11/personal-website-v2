@@ -20,12 +20,6 @@ const RecentProjects = () => {
       <h2 className={portfolioTitle}>Recent projects</h2>
       <div className={portfolioCards}>
         <div className={card}>
-          <Image
-            src="/wts.jpg"
-            layout="responsive"
-            width={1365}
-            height={655}
-            alt="Picture of the 'Whats The Song' website" />
           <h3>What&apos;s The Song</h3>
           <div>
             <Link href="https://whatsthesong.vercel.app/">
@@ -40,23 +34,17 @@ const RecentProjects = () => {
         </div>
 
         <div className={card}>
-          <Image
-            src="/mhn.png"
-            layout="responsive"
-            width={1365}
-            height={655}
-            alt="Picture of the 'Modern Hacker News' homepage" />
-          <h3>Modern Hacker News</h3>
+          <h3>CountAnimator</h3>
           <div>
-            <Link href="https://modernhn.netlify.app/">
-              <a target="_blank" rel="noopener">view site</a>
+            <Link href="https://www.npmjs.com/package/countanimator">
+              <a target="_blank" rel="noopener">view on NPM</a>
             </Link>
             <span className={dash}>&mdash;</span>
-            <Link href="https://github.com/Arash-11/modern-hacker-news">
+            <Link href="https://github.com/Arash-11/CountAnimator">
               <a target="_blank" rel="noopener">view code</a>
             </Link>
           </div>
-          <p>Read Hacker News, but with a more &apos;modern&apos; UI.</p>
+          <p>A lightweight and dependency-free number counter package that animates numbers incrementing or decrementing.</p>
         </div>
       </div>
 
