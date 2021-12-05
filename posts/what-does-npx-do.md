@@ -225,8 +225,3 @@ To summarize, `npx` is a task runner that gives you a lot of flexibility when in
 <br />
 
 I hope you enjoyed reading this and I'd love to hear if you have any comments! Don't hesitate to send me an email at <u>arashnawy@gmail.com</u> or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!
-
-<br />
-<br />
-
-<i>This article was initially my own notes I gathered from a few different sources but the two main ones are the <u>[Node.js docs](https://nodejs.dev/learn/the-npx-nodejs-package-runner)</u> and <u>[this FreeCodeCamp article](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/)</u>.</i>
