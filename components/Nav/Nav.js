@@ -23,7 +23,7 @@ const Nav = ({ toggleThemeMode }) => {
   }, [toggleThemeMode]);
 
   useEffect(() => {
-    let lastScrollPosition = window.scrollTop;
+    let lastScrollPosition = window.scrollTop || 0;
     window.addEventListener('scroll', () => {
       setHasScrolledDown(lastScrollPosition < window.scrollY && window.scrollY > 20);
       lastScrollPosition = window.scrollY;

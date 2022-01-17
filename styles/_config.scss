@@ -9,6 +9,7 @@ $divider: solid 2px var(--darkgray);
 $transition: all 0.2s ease-in;
 
 $screenSizeS: 750px;
+$screenSizeM: 950px;
 
 @mixin titleStyles {
   color: var(--lightgray);

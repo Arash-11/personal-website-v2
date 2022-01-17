@@ -79,7 +79,7 @@
 }
 
 .colorToggleBtn:hover {
-  color: white;
+  color: var(--white-shade);
 }
 
 .nav.lightMode {

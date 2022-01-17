@@ -15,10 +15,14 @@ const Intro = () => {
           <br />
           Previously working with cars, I am now a self-taught web developer working in the Shopify eco-system.
           <br />
-          I mostly work with JavaScript and Liquid, but I also enjoy getting my hands dirty with React, Node, Express, Firebase, PostgreSQL, and any other tool/language/framework suitable for the job.
+          <br />
+          I mainly use HTML, CSS, JavaScript, and Liquid for work, but I'm comfortable working with other frameworks/libraries/tools as well such as React, jQuery, Firebase (for noSQL DBs), Postgres (for SQL DBs), webpack (for bundling), Babel (for transpiling), etc.
           <br />
           <br />
-          When I'm not coding, you can find me writing a blog post, reading a book, or watching anime. I've also recently started getting into calisthenics and learning math (yes, I'm a proud nerd).
+          I have also dabbled with Next.js, which is what this site is built with, and server-side programming using Node and Express.
+          <br />
+          <br />
+          When I'm not coding, you can find me reading a book, watching anime, practising calisthenics or learning math.
         </p>
       </main>
     </>

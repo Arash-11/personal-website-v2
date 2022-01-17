@@ -1,3 +1,7 @@
+.opacity0 {
+  opacity: 0;
+}
+
 .bgBlurred,
 .bgNormal {
   position: fixed;
@@ -34,6 +38,15 @@
   position: absolute;
   top: 6rem;
   z-index: 3;
+}
+
+.footerHoverText {
+  margin-bottom: 1.3rem;
+  color: var(--whiteshade);
+  font-style: italic;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .link {
@@ -129,6 +142,12 @@
   .copyright {
     bottom: -0.5rem;
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footerHoverText {
+    display: none;
   }
 }
 /*# sourceMappingURL=Footer.module.css.map */

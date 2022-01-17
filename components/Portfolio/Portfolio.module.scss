@@ -14,7 +14,7 @@
 
 
 .portfolioCards {
-  @include sectionGrid($repeatCount: 2, $gap: 6rem);
+  @include sectionGrid($repeatCount: 2, $gap: 7rem);
 }
 
 
