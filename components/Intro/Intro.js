@@ -16,13 +16,13 @@ const Intro = () => {
           Previously working with cars, I am now a self-taught web developer working in the Shopify eco-system.
           <br />
           <br />
-          I mainly use HTML, CSS, JavaScript, and Liquid for work, but I'm comfortable working with other frameworks/libraries/tools as well such as React, jQuery, Firebase (for noSQL DBs), Postgres (for SQL DBs), webpack (for bundling), Babel (for transpiling), etc.
+          I mainly use HTML, CSS, JavaScript, and Liquid for work, but I'm comfortable working with other frameworks/libraries/tools as well such as React, jQuery, Firebase, webpack, Vite, etc.
           <br />
           <br />
-          I have also dabbled with Next.js, which is what this site is built with, and server-side programming using Node and Express.
+          I have also dabbled with Next.js, which is what this site is built with, and server-side programming using Node, Express, and Postgres.
           <br />
           <br />
-          When I'm not coding, you can find me reading a book, watching anime, practising calisthenics or learning math.
+          When I'm not coding, you can find me reading a book, watching anime, working out, learning math, or scrolling on Twitter.
         </p>
       </main>
     </>

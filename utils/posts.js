@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
+import remarkImages from 'remark-images';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
@@ -63,7 +64,8 @@ const getPostData = async (id) => {
     .use(remarkRehype, {allowDangerousHtml: true}) // Pass raw HTML strings through
     .use(rehypeRaw)
     .use(rehypeSanitize)
-    .use(rehypeStringify, {allowDangerousHtml: true}) // Serialize the raw HTML strings
+    .use(rehypeStringify, {allowDangerousHtml: true})
+    .use(remarkImages) // Serialize the raw HTML strings
     .process(matterResult.content)
     .then((file) => String(file))
     .catch((error) => {
