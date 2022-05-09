@@ -3,7 +3,7 @@
 .article {
   margin: $firstSectionMarginTop auto auto;
   max-width: $articleMaxWidth;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   color: var(--white);
 
   h1 {

@@ -1,7 +1,7 @@
 .article {
   margin: 5rem auto auto;
   max-width: 80ch;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   color: var(--white);
 }
 
