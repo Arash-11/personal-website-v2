@@ -3,8 +3,6 @@
   src: url('../public/fonts/youngserif.woff2'), url('../public/fonts/youngserif.woff');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Poppins:wght@100;400;500;700&display=swap');
-
 :root {
   --selection-color: #ffb800;
   --black: rgb(2, 2, 14);
