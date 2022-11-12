@@ -24,8 +24,8 @@ const RecentProjects = () => {
           <Image
             src="/wts.jpg"
             layout="responsive"
-            width={1365}
-            height={655}
+            width={1565}
+            height={755}
             alt="Picture of the 'Whats The Song' website" />
           <h3>What&apos;s The Song</h3>
           <div>
@@ -42,11 +42,51 @@ const RecentProjects = () => {
 
         <div className={card}>
           <Image
+            src="/vintage.png"
+            layout="responsive"
+            width={1565}
+            height={755}
+            alt="Picture of the 'Vintage' website" />
+          <h3>Vintage</h3>
+          <div>
+            <Link href="https://vintage-image.vercel.app/">
+              <a target="_blank" rel="noopener">view site</a>
+            </Link>
+            <span className={dash}>&mdash;</span>
+            <Link href="https://github.com/Arash-11/Vintage">
+              <a target="_blank" rel="noopener">view code</a>
+            </Link>
+          </div>
+          <p>📜 Apply a vintage filter to your image.</p>
+        </div>
+
+        <div className={card}>
+          <Image
+            src="/vite.png"
+            layout="responsive"
+            width={1565}
+            height={755}
+            alt="Picture of the NPM logo" />
+          <h3>vite-starter</h3>
+          <div>
+            <Link href="https://www.npmjs.com/package/vite-starter">
+              <a target="_blank" rel="noopener">view on NPM</a>
+            </Link>
+            <span className={dash}>&mdash;</span>
+            <Link href="https://github.com/Arash-11/vite-starter">
+              <a target="_blank" rel="noopener">view code</a>
+            </Link>
+          </div>
+          <p>⚡ A CLI tool to create a boilerplate for vanilla TS + SCSS projects using Vite.</p>
+        </div>
+
+        <div className={card}>
+          <Image
             src="/npm.jpg"
             layout="responsive"
-            width={1365}
-            height={655}
-            alt="Picture of the 'Whats The Song' website" />
+            width={1565}
+            height={755}
+            alt="Picture of the NPM logo" />
           <h3>CountAnimator</h3>
           <div>
             <Link href="https://www.npmjs.com/package/countanimator">
@@ -64,8 +104,8 @@ const RecentProjects = () => {
           <Image
             src="/ini-json.png"
             layout="responsive"
-            width={1365}
-            height={655}
+            width={1565}
+            height={755}
             alt="Picture of the 'INI/JSON Converter' website" />
           <h3>INI/JSON Converter</h3>
           <div>
@@ -84,8 +124,8 @@ const RecentProjects = () => {
           <Image
             src="/mhn.png"
             layout="responsive"
-            width={1365}
-            height={655}
+            width={1565}
+            height={755}
             alt="Picture of the 'Modern Hacker News' homepage" />
           <h3>Modern Hacker News</h3>
           <div>

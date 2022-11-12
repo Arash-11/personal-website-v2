@@ -39,7 +39,7 @@
     border: solid 2px var(--darkwhite);
     border-radius: 3px;
     &:hover {
-      border: solid 2px white;
+      border: solid 2px #fefefe;
     }
   }
 
@@ -75,7 +75,7 @@
 
 
 .nav.lightMode {
-  background-color: white;
+  background-color: #fefefe;
   border-bottom: solid 1px var(--white);
   ul {
     color: var(--gray);

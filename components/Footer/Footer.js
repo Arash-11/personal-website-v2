@@ -2,7 +2,7 @@ import { useRef, useState, useContext } from 'react';
 import ThemeContext from '../../contexts/ThemeContext';
 import Link from 'next/link';
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import { opacity0, bgBlurred, footer, lightMode, linkWrapper, footerHoverText, link, icons, copyright } from './Footer.module.css';
+import { bgBlurred, footer, lightMode, linkWrapper, link, icons, copyright } from './Footer.module.css';
 
 const Footer = () => {
   const isLightMode = useContext(ThemeContext);
@@ -40,7 +40,6 @@ const Footer = () => {
       <footer id="contact" className={`${footer} ${isLightMode ? lightMode : ''}`}>
         <Link href="mailto:arashnawy@gmail.com">
           <a className={linkWrapper} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-            <p className={`${footerHoverText} ${blurBg ? opacity0 : ''}`}>Try hovering above here!</p>
             <div className={link} ref={linkRef}>
               Let&apos;s chat.<br />
               <span>Send an email.</span>

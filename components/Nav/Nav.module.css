@@ -83,7 +83,7 @@
 }
 
 .nav.lightMode {
-  background-color: white;
+  background-color: #fefefe;
   border-bottom: solid 1px var(--white);
 }
 
