@@ -77,7 +77,7 @@
   border-left: solid 5px var(--slategray);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
   .article {
     min-width: 100%;
   }

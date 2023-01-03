@@ -42,6 +42,26 @@ const RecentProjects = () => {
 
         <div className={card}>
           <Image
+            src="/ini-json.png"
+            layout="responsive"
+            width={1565}
+            height={755}
+            alt="Picture of the 'INI/JSON Converter' website" />
+          <h3>INI/JSON Converter</h3>
+          <div>
+            <Link href="https://arash-11.github.io/ini-json-converter/">
+              <a target="_blank" rel="noopener">view site</a>
+            </Link>
+            <span className={dash}>&mdash;</span>
+            <Link href="https://github.com/Arash-11/ini-json-converter">
+              <a target="blank" rel="noopener">view code</a>
+            </Link>
+          </div>
+          <p>An online tool that converts INI format to JSON and vice versa.</p>
+        </div>
+
+        <div className={card}>
+          <Image
             src="/vintage.png"
             layout="responsive"
             width={1565}
@@ -58,6 +78,26 @@ const RecentProjects = () => {
             </Link>
           </div>
           <p>📜 Apply a vintage filter to your image.</p>
+        </div>
+
+        <div className={card}>
+          <Image
+            src="/rwm.png"
+            layout="responsive"
+            width={1565}
+            height={755}
+            alt="Picture of the 'Read with Meaning' website" />
+          <h3>Read with Meaning</h3>
+          <div>
+            <Link href="https://rwm.vercel.app/">
+              <a target="_blank" rel="noopener">view site</a>
+            </Link>
+            <span className={dash}>&mdash;</span>
+            <Link href="https://github.com/Arash-11/Read-with-Meaning">
+              <a target="blank" rel="noopener">view code</a>
+            </Link>
+          </div>
+          <p>An online tool that helps you look up the meanings of words in the text that you're reading with just a click.</p>
         </div>
 
         <div className={card}>
@@ -98,26 +138,6 @@ const RecentProjects = () => {
             </Link>
           </div>
           <p>A lightweight and dependency-free number counter package that animates numbers incrementing or decrementing.</p>
-        </div>
-
-        <div className={card}>
-          <Image
-            src="/ini-json.png"
-            layout="responsive"
-            width={1565}
-            height={755}
-            alt="Picture of the 'INI/JSON Converter' website" />
-          <h3>INI/JSON Converter</h3>
-          <div>
-            <Link href="https://arash-11.github.io/ini-json-converter/">
-              <a target="_blank" rel="noopener">view site</a>
-            </Link>
-            <span className={dash}>&mdash;</span>
-            <Link href="https://github.com/Arash-11/ini-json-converter">
-              <a target="blank" rel="noopener">view code</a>
-            </Link>
-          </div>
-          <p>An online tool that converts INI format to JSON and vice versa.</p>
         </div>
 
         <div className={card}>

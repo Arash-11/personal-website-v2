@@ -116,7 +116,7 @@
   color: black;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
   .nav {
     padding: 0.7rem 2rem;
     border-bottom: solid 2px;

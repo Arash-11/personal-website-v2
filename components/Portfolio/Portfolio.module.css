@@ -125,7 +125,7 @@
   color: var(--darkgray);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
   .container {
     margin-top: 3.5rem;
     padding-top: 2.33333rem;
