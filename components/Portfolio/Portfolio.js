@@ -139,26 +139,6 @@ const RecentProjects = () => {
           </div>
           <p>A lightweight and dependency-free number counter package that animates numbers incrementing or decrementing.</p>
         </div>
-
-        <div className={card}>
-          <Image
-            src="/mhn.png"
-            layout="responsive"
-            width={1565}
-            height={755}
-            alt="Picture of the 'Modern Hacker News' homepage" />
-          <h3>Modern Hacker News</h3>
-          <div>
-            <Link href="https://modernhn.netlify.app/">
-              <a target="_blank" rel="noopener">view site</a>
-            </Link>
-            <span className={dash}>&mdash;</span>
-            <Link href="https://github.com/Arash-11/modern-hacker-news">
-              <a target="blank" rel="noopener">view code</a>
-            </Link>
-          </div>
-          <p>Read Hacker News, but with a more &apos;modern&apos; UI.</p>
-        </div>
       </div>
 
       <Link href="https://github.com/Arash-11">
