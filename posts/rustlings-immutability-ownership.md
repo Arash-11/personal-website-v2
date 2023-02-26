@@ -63,9 +63,9 @@ fn string_uppercase(mut data: String) {
 
 <br />
 
-As the exercise’s first comment indicates, `get_char` should not take ownership of the value being passed to it. So the fix is to have it borrow the *value* instead. So far so good!
+As the exercise’s first comment indicates, `get_char` should not take ownership of the value being passed to it. So the fix is to have it borrow it instead. So far so good!
 
-Now onto the `string_uppercase` function, we can just remove the `&`. The function takes ownership of the code, the code compiles and Rustlings tells me I’m good to move on!
+Now onto the `string_uppercase` function, we can just remove the `&`. The function takes ownership of the code, the code compiles and Rustlings tells us that we're good to move on!
 
 <br />
 
@@ -136,4 +136,4 @@ To summarize, immutability in Rust applies to variables and not values. Once a f
 
 <br />
 
-I hope this helps clarifies the immutability and ownership nature of Rust a little! If you have any feedback, questions, or comments, don't hesitate to send me an email at <u>arashnawy@gmail.com</u> or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!
+I hope this helps a little to clarify the immutability and ownership nature of Rust! If you have any feedback, questions, or comments, don't hesitate to send me an email at <u>arashnawy@gmail.com</u> or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!
