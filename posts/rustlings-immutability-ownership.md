@@ -86,7 +86,7 @@ In our above code, as per [Rust’s ownership rules](https://doc.rust-lang.org/b
 
 <br />
 
-As a test, if we make the data variable mutable in main:
+As a test, if we make the `data` variable mutable in main:
 <pre><code class="language-rs">fn main() {
     let mut data = "Rust is great!".to_string();
 
