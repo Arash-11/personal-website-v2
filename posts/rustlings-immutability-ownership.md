@@ -34,11 +34,7 @@ fn string_uppercase(mut data: &String) {
 
 <br />
 
-(SPOILER ALERT: solution incoming)
-
-<br />
-
-We can go ahead and make the following modifications:
+To make the code compile, We can go ahead and update it to the following:
 ```
 fn main() {
     let data = "Rust is great!".to_string();
@@ -63,7 +59,7 @@ fn string_uppercase(mut data: String) {
 
 <br />
 
-As the exercise’s first comment indicates, `get_char` should not take ownership of the value being passed to it. So the fix is to have it borrow it instead. So far so good!
+As the exercise’s first comment indicates, `get_char` should not take ownership of the value being passed to it. So a fix is to have it borrow the value instead. So far so good!
 
 Now onto the `string_uppercase` function, we can just remove the `&`. The function takes ownership of the code, the code compiles and Rustlings tells us that we're good to move on!
 
