@@ -28,9 +28,7 @@ Let's say you've installed webpack (and webpack-cli) locally, by running:
 
 <br />
 
-```
-$ npm i -D webpack webpack-cli
-```
+<pre><code class="language-sh">$ npm i -D webpack webpack-cli</code></pre>
 
 <br />
 
@@ -38,9 +36,7 @@ If you want to execute the `webpack` package now, just running the following won
 
 <br />
 
-```
-$ webpack
-```
+<pre><code class="language-sh">$ webpack</code></pre>
 
 <br />
 
@@ -62,9 +58,7 @@ So, you have two options here:
 
 <br />
 
-```
-$ ./node_modules/.bin/webpack
-```
+<pre><code class="language-sh">$ ./node_modules/.bin/webpack</code></pre>
 
 <br />
 
@@ -76,15 +70,13 @@ or
 
 <br />
 
-```
-{
+<pre><code class="language-json">{
   ...
   "scripts": {
    "webpack": "webpack"
   },
   ...
-}
-```
+}</code></pre>
 
 <br />
 
@@ -92,9 +84,7 @@ Then run the following in your terminal:
 
 <br />
 
-```
-$ npm run webpack
-```
+<pre><code class="language-sh">$ npm run webpack</code></pre>
 
 <br />
 <br />
@@ -103,9 +93,7 @@ Here's where `npx` can help make things easier. After installing webpack and web
 
 <br />
 
-```
-$ npm i -D webpack webpack-cli
-```
+<pre><code class="language-sh">$ npm i -D webpack webpack-cli</code></pre>
 
 <br />
 
@@ -113,9 +101,7 @@ you can just run the following command:
 
 <br />
 
-```
-$ npx webpack
-```
+<pre><code class="language-sh">$ npx webpack</code></pre>
 
 <br />
 <br />
@@ -129,9 +115,7 @@ Let's say, that you want to use `create-react-app`, so you run this:
 
 <br />
 
-```
-$ npm i -g create-react-app && create-react-app my-app
-```
+<pre><code class="language-sh">$ npm i -g create-react-app && create-react-app my-app</code></pre>
 
 <br />
 
@@ -139,9 +123,7 @@ And a few months later, if you want to create a new project, you need to run the
 
 <br />
 
-```
-$ create-react-app my-new-app
-```
+<pre><code class="language-sh">$ create-react-app my-new-app</code></pre>
 
 <br />
 
@@ -149,9 +131,7 @@ But what if you wanted to use the latest version of CRA? You'll need to run the 
 
 <br />
 
-```
-$ npm i -g create-react-app
-```
+<pre><code class="language-sh">$ npm i -g create-react-app</code></pre>
 
 <br />
 
@@ -159,9 +139,7 @@ There must be an easier way to tackle this? You guessed it - `npx`. If you want 
 
 <br />
 
-```
-$ npx create-react-app my-app
-```
+<pre><code class="language-sh">$ npx create-react-app my-app</code></pre>
 
 <br />
 <br />

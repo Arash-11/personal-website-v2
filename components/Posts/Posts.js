@@ -3,6 +3,7 @@ import ThemeContext from '../../contexts/ThemeContext';
 import Head from 'next/head';
 import Date from '../../utils/date';
 import { article, lightMode, content } from './Posts.module.css';
+import 'highlight.js/styles/tomorrow-night.css';
 
 const Posts = ({ title, date, contentHtml }) => {
   const isLightMode = useContext(ThemeContext);

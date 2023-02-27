@@ -16,9 +16,7 @@ One of the first and important mental models that I learned is about variables a
 
 <br />
 
-```
-let x = "javascript";
-```
+<pre><code class="language-js">let x = "javascript";</code></pre>
 
 <br />
 
@@ -56,12 +54,11 @@ Let's use this new mental model: what is `console.log` in the code snippet below
 
 <br />
 
-```
-let myFood = "pizza";
+<pre><code class="language-js">let myFood = "pizza";
 let yourFood = myFood;
 myFood = "fries";
-console.log(yourFood);
-```
+console.log(yourFood);</code></pre>
+
 <br />
 
 Do you have your answer? Okay, now take a moment and think about how you'd explain how you got to that conclusion, using the aforementioned mental model.

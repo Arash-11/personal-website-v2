@@ -10,8 +10,7 @@ I was working on the Rustlings’ move_semantics6 exercise, when I noticed somet
 
 This is the uncompiling code given that we need to fix:
 
-```
-fn main() {
+<pre><code class="language-rs">fn main() {
     let data = "Rust is great!".to_string();
 
     get_char(data);
@@ -29,14 +28,12 @@ fn string_uppercase(mut data: &String) {
     data = &data.to_uppercase();
 
     println!("{}", data);
-}
-```
+}</code></pre>
 
 <br />
 
 To make the code compile, we can go ahead and update it to the following:
-```
-fn main() {
+<pre><code class="language-rs">fn main() {
     let data = "Rust is great!".to_string();
 
     get_char(&data);
@@ -54,8 +51,7 @@ fn string_uppercase(mut data: String) {
     data = data.to_uppercase();
 
     println!("{}", data);
-}
-```
+}</code></pre>
 
 <br />
 
@@ -91,21 +87,18 @@ In our above code, as per [Rust’s ownership rules](https://doc.rust-lang.org/b
 <br />
 
 As a test, if we make the data variable mutable in main:
-```
-fn main() {
+<pre><code class="language-rs">fn main() {
     let mut data = "Rust is great!".to_string();
 
     get_char(&data);
 
     string_uppercase(data);
-}
-```
+}</code></pre>
 <br />
 
 The compiler gives us the following warning:
 
-```
-warning: variable does not need to be mutable
+<pre><code class="language-sh">warning: variable does not need to be mutable
  --> src/main.rs:2:9
   |
 2 |     let mut data = "Rust is great!".to_string();
@@ -113,8 +106,7 @@ warning: variable does not need to be mutable
   |         |
   |         help: remove this `mut`
   |
-  = note: `#[warn(unused_mut)]` on by default
-```
+  = note: `#[warn(unused_mut)]` on by default</code></pre>
 
 <br />
 

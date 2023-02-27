@@ -6,8 +6,9 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkImages from 'remark-images';
 import rehypeRaw from 'rehype-raw';
-import rehypeSanitize from 'rehype-sanitize';
+import rehypeSanitize, {defaultSchema} from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
+import rehypeHighlight from 'rehype-highlight';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -63,7 +64,20 @@ const getPostData = async (id) => {
     .use(remarkParse)
     .use(remarkRehype, {allowDangerousHtml: true}) // Pass raw HTML strings through
     .use(rehypeRaw)
-    .use(rehypeSanitize)
+    .use(rehypeSanitize, {
+      ...defaultSchema,
+      attributes: {
+        ...defaultSchema.attributes,
+        code: [
+          ...(defaultSchema.attributes.code || []),
+          // List of all allowed languages:
+          [
+            'className', 'language-js', 'language-jsx', 'language-ts', 'language-tsx', 'language-css', 'language-scss', 'language-md', 'language-sh', 'language-json', 'language-rs'
+          ]
+        ]
+      }
+    })
+    .use(rehypeHighlight)
     .use(rehypeStringify, {allowDangerousHtml: true})
     .use(remarkImages) // Serialize the raw HTML strings
     .process(matterResult.content)
