@@ -136,4 +136,4 @@ To summarize, immutability in Rust applies to variables and not values. Once a f
 
 <br />
 
-I hope this helps a little to clarify the immutability and ownership nature of Rust! If you have any feedback, questions, or comments, don't hesitate to send me an email at <u>arashnawy@gmail.com</u> or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!
+I hope this write-up helps a little in clarifying a part of the immutability and ownership nature of Rust. If you have any feedback, questions, or comments, don't hesitate to send me an email at <u>arashnawy@gmail.com</u> or DM me on <u>[Twitter](https://twitter.com/arash11gt)</u>. Until next time!
