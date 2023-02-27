@@ -34,7 +34,7 @@ fn string_uppercase(mut data: &String) {
 
 <br />
 
-To make the code compile, We can go ahead and update it to the following:
+To make the code compile, we can go ahead and update it to the following:
 ```
 fn main() {
     let data = "Rust is great!".to_string();
