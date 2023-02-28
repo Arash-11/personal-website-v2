@@ -17,7 +17,7 @@ const BlogsPage = ({ allPostsData }) => {
       <Head>
         <meta
           name="keywords"
-          content="blog,blogs,blogging,web development,software,web dev,tech,writing"
+          content="blog,blogs,blogging,web development,software,web dev,tech,writing,rust,low level,systems,cs,computer science"
         />
         <meta name="description" content="Collection of all of my blog posts." />
         <title>Blogs</title>

@@ -20,10 +20,10 @@ const Home = ({ allPostsData }) => {
       <Head>
         <meta
           name="keywords"
-          content="blog,web development,software,web dev,tech,writing,shopify,ecommerce,nextjs"
+          content="blog,web development,software,web dev,tech,writing,nextjs,computer science"
         />
-        <meta name="description" content="Hi, I am a web developer working in the Shopify eco-system." />
-        <title>arash &mdash; web developer</title>
+        <meta name="description" content="Hi, I am a software developer." />
+        <title>arash &mdash; software developer</title>
       </Head>
       <Intro />
       <BlogPosts posts={recentBlogs} isRecentBlogs={true} />
